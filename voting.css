@@ -1,0 +1,141 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/oscar-keys-ojVMh1QTVGY-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/*Logo Start*/
+.logo{
+    z-index: 5000;
+    position: absolute;
+	top: -15px;
+	left: 0;
+}
+.logo img{
+    width: 205px;
+    height: 180px;
+    opacity: 1;
+}
+/*Logo end*/
+
+/* NAVBAR */
+label .menu {
+    position: absolute;
+    right: -20px;
+    top: -70px;
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-radius: 50% 50% 50% 50%;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    cursor: pointer;
+}
+label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: rgb(231, 221, 221);
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+label .hamburger:before {
+    top: -10px;
+}
+label .hamburger:after {
+    bottom: -10px;
+}
+label input {
+    display: none;
+}
+label input:checked + .menu {
+    box-shadow: 0 0 0 100vw rgb(0, 0, 0), 0 0 0 100vh rgb(0, 0, 0);
+    border-radius: 0;
+}
+label input:checked + .menu .hamburger {
+    transform: rotate(45deg);
+    background: rgb(255, 255, 255);
+}
+label input:checked + .menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0;
+    background: rgb(255, 255, 255);
+}
+label input:checked + .menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+    
+}
+label input:checked + .menu + ul {
+    z-index: 2000;
+    opacity: 1;
+}
+label input:checked + .menu {
+    background: rgb(0, 0, 0);
+}
+label input:checked + .hamburger {
+    background:#000;
+}
+label input:checked + .root{
+    position: absolute;
+    height: 120vh;
+    background: rgb(211, 10, 10) !important;
+}
+label ul {
+    margin-top: 30px;
+    font-family: 'Fredoka One', cursive;
+    z-index: -500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.25s 0s ease-in-out;
+    list-style:none;
+    /* height: 120vh;
+    width: 100vw; */
+}
+label ul li{
+    margin-bottom: 40px;
+}
+label ul li a {
+    margin-bottom: 1em;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+   
+}
+label ul li a span{
+    color:#fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+label a span:hover{
+    transition: background-color 0.3s ease-in;
+    color: #fff;
+    border-radius: 10%;
+    background-color:rgb(214, 12, 12) ;
+}
+/*navbar end*/
+

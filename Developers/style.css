@@ -1,0 +1,391 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/oscar-keys-ojVMh1QTVGY-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* NAVBAR */
+label .menu {
+    position: absolute;
+    right: -20px;
+    top: -70px;
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-radius: 50% 50% 50% 50%;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    cursor: pointer;
+}
+label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: rgb(231, 221, 221);
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+label .hamburger:before {
+    top: -10px;
+}
+label .hamburger:after {
+    bottom: -10px;
+}
+label input {
+    display: none;
+}
+label input:checked + .menu {
+    box-shadow: 0 0 0 100vw rgb(0, 0, 0), 0 0 0 100vh rgb(0, 0, 0);
+    border-radius: 0;
+}
+label input:checked + .menu .hamburger {
+    transform: rotate(45deg);
+    background: rgb(255, 255, 255);
+}
+label input:checked + .menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0;
+    background: rgb(255, 255, 255);
+}
+label input:checked + .menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+    
+}
+label input:checked + .menu + ul {
+    z-index: 2000;
+    opacity: 1;
+}
+label input:checked + .menu {
+    background: rgb(0, 0, 0);
+}
+label input:checked + .hamburger {
+    background:#000;
+}
+label input:checked + .root{
+    position: absolute;
+    height: 120vh;
+    background: rgb(211, 10, 10) !important;
+}
+label ul {
+    margin-top: 30px;
+    font-family: 'Fredoka One', cursive;
+    z-index: -500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.25s 0s ease-in-out;
+    list-style:none;
+    /* height: 120vh;
+    width: 100vw; */
+}
+label ul li{
+    margin-bottom: 40px;
+}
+label ul li a {
+    margin-bottom: 1em;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+   
+}
+label ul li a span{
+    color:#fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+label a span:hover{
+    transition: background-color 0.3s ease-in;
+    color: #fff;
+    border-radius: 10%;
+    background-color:rgb(214, 12, 12) ;
+}
+/*navbar end*/
+
+/*Logo Start*/
+.logo{
+    z-index: 5000;
+    position: absolute;
+	top: -15px;
+	left: 0;
+}
+.logo img{
+    width: 205px;
+    height: 180px;
+    opacity: 1;
+}
+/*Logo end*/
+
+/*Boxes starts*/
+.heading{
+	text-align: center;
+	color: white;
+	margin-top: 150px;
+}
+.border1 {
+  width: 160px;
+  height: 5px;
+  background: white;
+  margin: 26px auto;
+}
+.box .row{
+  margin:5px auto;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.part1 {
+    width: 270px;
+    height: 400px;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:70px;
+    margin-top:70px;
+    perspective: 1000px;
+}
+.part2 {
+    width: 270px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform: translateZ(-130px);
+    transition: transform 350ms;
+}
+.part2:hover {
+    transform: rotateY(-78deg) translateZ(20px);
+}
+.part2 .poster, 
+  .part2 .info {
+    position: absolute;
+    width: 270px;
+    height: 400px;
+    background-color: #fff;
+    backface-visibility: hidden;
+  }
+.part2 .poster  {
+     transform: translateZ(130px);
+     background-repeat: no-repeat;
+}
+   
+.part2 .info {
+     transform: rotateY(90deg) translateZ(130px);
+     font-size: 1rem;
+     background-color: #e2c9be;
+     background-image: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
+}
+.part2::after {
+     content: '';
+     width: 270px;
+     height: 260px;
+     position: absolute;
+     bottom: 0;
+     box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+     transform-origin: 100% 100%;
+     transform: rotateX(90deg) translateY(130px);
+     transition: box-shadow 350ms;
+}
+   
+.part2:hover::after {
+     box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+}
+.info h3{
+     text-align: center;
+}
+.info h4{
+     text-align: center;
+}
+.part2 .poster,
+  .part2 .info{
+    transition: box-shadow 350ms;
+  }
+ .part2 .poster {
+    box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+  }
+  
+.part2:hover .poster {
+    box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+  }
+.part2 .info{
+    box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+  }
+  
+.part2:hover .info{
+    box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+  }
+  
+.part1:nth-child(1) .part2 .poster {
+     background-image: url("../images/IMG-20210121-WA0010.jpg");
+     background-size:cover;
+	 background-position: center;
+   }
+.part1:nth-child(2) .poster {
+    background-image: url("../images/2021_DSC 2000.jpg");
+    background-size:cover;
+	background-position: center;
+  }
+.part1:nth-child(3) .poster {
+    background-image: url('../images/Sejal Jadhav.jpg');
+    background-size:cover;
+	background-position: center;
+  }
+.part1:nth-child(4) .poster {
+    background-image: url('../images/SquarePic_20210121_14280269.jpg');
+    background-size:cover;
+	background-position: center;
+  }
+.part1:nth-child(5) .poster {
+    background-image: url('../images/');
+    background-size:cover;
+	background-position: center;
+  }
+.part1:nth-child(6) .poster {
+    background-image: url('../images/Sakshi Mahakalkar.jpg');
+    background-size:cover;
+	background-position: center;
+  }
+.part1:nth-child(7) .poster {
+    background-image: url('../images/');
+    background-size:cover;
+	background-position: center;
+  }
+.part2 .poster{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+   }
+.part2 .poster h1{
+    margin:2px auto;
+    font-family:hattori;
+    font-variant:small-caps;
+    font-size:3rem;
+    font-weight:bold;
+}
+
+.part1:nth-child(1) .poster .head{
+    color:white;
+  }
+.part1:nth-child(2) .poster .head{
+    color:white;
+  }
+/*cards ends*/
+
+/*social*/
+.social{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.social ul{
+			display: flex;
+}
+.social ul a{
+    position: relative;
+	display: block;
+	color: white;
+	font-size: 30px;
+	height: 60px;
+	width: 60px;
+	background: #171515;
+	line-height: 60px;
+	border-radius: 50%;
+	margin: 0 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.social ul a:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	z-index: -1;
+	transform: scale(0.9);
+	transition: 0.5s;
+}
+.social ul a:nth-child(1):before{
+	background: 4267B2;
+}
+.social ul a:nth-child(2):before{
+	background: 4267B2;
+}
+.social ul a:nth-child(3):before{
+	background: 4267B2;
+}
+.social ul a:nth-child(4):before{
+	background: 4267B2;
+}
+.social ul a:nth-child(5):before{
+	background: 4267B2;
+}
+.social ul a:hover:before{
+	filter: blur(3px);
+	transform: scale(1.2);
+}
+.social ul a:nth-child(1):hover:before{
+	box-shadow: 0 0 15px #4267B2;
+}
+.social ul a:nth-child(2):hover:before{
+	box-shadow: 0 0 15px #1DA1F2;
+}
+.social ul a:nth-child(3):hover:before{
+	box-shadow: 0 0 15px #E1306C;
+}
+.social ul li:nth-child(4):hover:before{
+	box-shadow: 0 0 15px #2867B2;
+}
+.social ul li:nth-child(5):hover:before{
+	box-shadow: 0 0 15px #ff0000;
+}
+.social ul a:nth-child(1):hover{
+	color: #456cba;
+	box-shadow: 0 0 15px #4267B2;
+	text-shadow: 0 0 15px #4267B2;
+}
+.social ul a:nth-child(2):hover{
+	color: #26a4f2;
+	box-shadow: 0 0 15px #1DA1F2;
+	text-shadow: 0 0 15px #1DA1F2;
+}
+.social ul a:nth-child(3):hover{
+	color: #e23670;
+	box-shadow: 0 0 15px #E1306C;
+	text-shadow: 0 0 15px #E1306C;
+}
+.social ul a:nth-child(4):hover{
+	color: #2a6cbb;
+	box-shadow: 0 0 15px #2867B2;
+	text-shadow: 0 0 15px #2867B2;
+}
+.social ul a:nth-child(5):hover{
+	color: #ff1a1a;
+	box-shadow: 0 0 15px #ff0000;
+	text-shadow: 0 0 15px #ff0000;
+}
