@@ -2,9 +2,6 @@
 	padding: 0;
 	margin: 0;
 }
-html,body{
-	overflow-x:hidden;
-}
 body {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/oscar-keys-ojVMh1QTVGY-unsplash.jpg");
   background-size: cover;
@@ -296,12 +293,6 @@ label a span:hover{
 	color: #ff1a1a;
 	box-shadow: 0 0 15px #ff0000;
 	text-shadow: 0 0 15px #ff0000;
-}
-@media screen and (max-width:500px){
-    .social ul a{
-        font-size: 20px;
-        margin: 0 7px;
-    }
 }
 
 
