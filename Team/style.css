@@ -297,4 +297,11 @@ label a span:hover{
 	box-shadow: 0 0 15px #ff0000;
 	text-shadow: 0 0 15px #ff0000;
 }
+@media screen and (max-width:500px){
+    .social ul a{
+        font-size: 20px;
+        margin: 0 7px;
+    }
+}
+
 
