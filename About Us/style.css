@@ -6,7 +6,7 @@
 body {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/oscar-keys-ojVMh1QTVGY-unsplash.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+ background-attachment: fixed;
   background-position: center;
   margin: 0;
   padding: 0;
