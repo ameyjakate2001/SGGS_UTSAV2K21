@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Fredoka+One&display=swap');
 *{
 	padding: 0;
 	margin: 0;
@@ -263,6 +266,11 @@ label a span:hover{
   }
 .part1:nth-child(6) .poster {
     background-image: url('../images/Sakshi Mahakalkar.jpg');
+    background-size:cover;
+	background-position: center;
+  }
+  .part1:nth-child(7) .poster {
+    background-image: url('../images/IMG-20191017-WA0008.jpg');
     background-size:cover;
 	background-position: center;
   }
