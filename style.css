@@ -4,10 +4,15 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-html,body{
-    overflow-x: hidden;
+body{
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/oscar-keys-ojVMh1QTVGY-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 .root{
     min-height: 100vh;
@@ -18,22 +23,6 @@ html,body{
 .Home-page{
     position: relative;
     height: 100vh;
-}
-.Home-page::before{
-    content: '';
-    position: absolute;
-    top: -40px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    opacity: 1;
-    background: linear-gradient(
-            rgba(20,20,20, .5), 
-            rgba(20,20,20, .5)),
-            url( "images/oscar-keys-ojVMh1QTVGY-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .logo{
     z-index: 5000;
@@ -226,7 +215,7 @@ label a span:hover{
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	margin-top: 300px;
+	margin-top: -120px;
 }
 .social ul{
 			display: flex;
