@@ -20,6 +20,9 @@ body {
  .Home-page{
 	 width:100vw;
 	 overflow-x:hidden;
+    position: relative;
+    height: 100vh;
+}
 }
 
 /* NAVBAR */
