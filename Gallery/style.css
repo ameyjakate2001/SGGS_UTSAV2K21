@@ -292,9 +292,6 @@ label a span:hover{
 .social ul a:nth-child(4):before{
 	background: 4267B2;
 }
-.social ul a:nth-child(5):before{
-	background: 4267B2;
-}
 .social ul a:hover:before{
 	filter: blur(3px);
 	transform: scale(1.2);
@@ -309,9 +306,6 @@ label a span:hover{
 	box-shadow: 0 0 15px #E1306C;
 }
 .social ul li:nth-child(4):hover:before{
-	box-shadow: 0 0 15px #2867B2;
-}
-.social ul li:nth-child(5):hover:before{
 	box-shadow: 0 0 15px #ff0000;
 }
 .social ul a:nth-child(1):hover{
@@ -330,11 +324,6 @@ label a span:hover{
 	text-shadow: 0 0 15px #E1306C;
 }
 .social ul a:nth-child(4):hover{
-	color: #2a6cbb;
-	box-shadow: 0 0 15px #2867B2;
-	text-shadow: 0 0 15px #2867B2;
-}
-.social ul a:nth-child(5):hover{
 	color: #ff1a1a;
 	box-shadow: 0 0 15px #ff0000;
 	text-shadow: 0 0 15px #ff0000;
