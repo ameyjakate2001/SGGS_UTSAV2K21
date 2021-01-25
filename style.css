@@ -221,7 +221,8 @@ label a span:hover{
 	margin-top: -120px;
 }
 .social ul{
-			display: flex;
+    display: flex;
+     padding-left:0;
 }
 .social ul a{
     position: relative;
