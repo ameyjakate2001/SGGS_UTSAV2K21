@@ -14,7 +14,7 @@ body{
     background: linear-gradient(
         rgba(20,20,20, .5), 
         rgba(20,20,20, .5)),
-        url( "oscar-keys-ojVMh1QTVGY-unsplash.jpg") center no-repeat;
+        url( "../images/oscar-keys-ojVMh1QTVGY-unsplash.jpg") center no-repeat;
 	background-attachment: fixed;
     background-size: cover;
 }
