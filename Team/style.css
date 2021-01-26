@@ -40,7 +40,7 @@ body {
 /* NAVBAR */
 label .menu {
     position: absolute;
-    right: -20px;
+    right: 0px;
     top: -70px;
     z-index: 100;
     width: 150px;
